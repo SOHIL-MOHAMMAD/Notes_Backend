@@ -7,7 +7,7 @@ from router.NotesRouter import notes_router
 Base.metadata.create_all(bind=engine)
 
 origins = [
-    "http://localhost:3000", 
+    "https://notes-desk-seven.vercel.app", 
 ]
 
 app = FastAPI()
