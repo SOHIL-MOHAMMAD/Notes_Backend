@@ -7,7 +7,7 @@ from router.NotesRouter import notes_router
 Base.metadata.create_all(bind=engine)
 
 origins = [
-    "https://notes-desk-seven.vercel.app",
+    "https://notes-desk-lyart.vercel.app",
     "http://localhost:3000",
     "http://127.0.0.1:3000", 
 ]
