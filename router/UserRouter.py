@@ -114,11 +114,6 @@ def signin_user(
     return Token(access_token=token, token_type="bearer")
 
 
-@user_router.get('/list', response_model=List[signupResponse])
-def userList(db: Session = Depends(get_db)):
-    users = db.query(User_model).all()
-    return users
-
 
 @user_router.delete('/remove/{id}', status_code=status.HTTP_204_NO_CONTENT)
 def remove_user(id: int, db: Session = Depends(get_db)):
